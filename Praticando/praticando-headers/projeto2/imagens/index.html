@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Tributário Municipal - STM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="https://stm.semfaz.saoluis.ma.gov.br/portalPrefeitura/jsp/principal/principal.jsf" target="_self"><img src="logo.png" alt="Logo Prefeitura SLZ"></a>
+        <nav>
+            <a href="#" class="home">Home</a>
+            <a href="#">Credencie-se</a>
+            <a href="#">Validar NFS-e</a>
+            <a href="#">Acessar Sistema</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Emissão de Certidão</h1>
+        <hr>
+        <div align="left" >
+            <div class="selecao">
+                    <label for="">Tipo de Contribuinte:</label><br>
+                    <input type="radio" name="nome" checked="checked"><label for="pf">Pessoa Física</label>
+                    <input type="radio" name="nome"><label for="pj">Pessoa Jurídica</label>
+                    <input type="radio" name="nome"><label for="imov">Imóvel</label>
+            </div>
+        </div>
+        <div class="campos">
+            <label for="cpf">CPF*:</label>
+            <input type="text"><br>
+            <label for="nome">Nome:</label>
+            <input type="text" disabled="disabled"><br>
+            <label for="cpf">Certidão*:</label>
+            <select name="checkbox" id="opt">
+                <option value="vazio"></option>
+                <option value="cn">Certidao Negativa de Pessoa Física</option>
+                <option value="cp">Certidão Positiva com Efeitos de Negativa da Pessoa Física</option>
+            </select><br>
+            <label for="cpf">Finalidade da certidão*:</label>
+            <input type="text"><br>
+            <label for="cpf">Reproduza o código*:</label>
+            <input type="text">
+        </div>
+        <hr>
+        <nav>
+            <a href="#">Voltar</a>
+            <a href="#">Emitir Certidao</a>
+        </nav>
+    </main>
+    <footer>
+        <p>AV. PEDRO II, S/Nº - PALÁCIO DE LA RAVARDIÈRE, CENTRO - TELEFONE: (98) 3212-8000</p>
+        <small>2014 © Prefeitura de São Luís. Todos os direitos reservado</small>
+    </footer>
+</body>
+</html>
